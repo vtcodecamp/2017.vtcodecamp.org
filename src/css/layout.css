@@ -180,134 +180,119 @@ header.page nav li a:focus {
 /* Date, Time, Location meta block */
 
 .page.content .meta {
-    width: 96%;
     display: inline-block;
-    margin-bottom: 0.2em;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
+
     text-align: center;
     vertical-align: middle;
-}
-.page.content .meta {
-    margin-top: 2em;
-    padding-top: 0.4em;
-    font-size: 0.55em;
-    border-top: 1px dotted rgba(0, 0, 0, 0.3);
+
+    font-size: 1rem;
+    padding: 1rem 0;
+
+
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
     color: var(--dark-gray);
+    
 }
-.page.content .meta p {
-    font-size: 2.2em;
-    color: var(--dark-gray);
+
+.page.content .meta abbr {
+    border-bottom: none !important;
+    cursor: inherit !important;
+    text-decoration: none !important;
+}
+
+.page.content .meta > abbr > span {
+    display: block;
 }
 .page.content .meta .date-time {
     display: block;
     font-weight: bold;
 }
 .page.content .meta .location {
+    max-width: 60%;
     color: var(--dark-gray);
 }
-.page.content .meta .location small.school {
-    display: block;
-    font-size: 0.65em;
+.page.content .meta .date-time,
+.page.content .meta .location {
+    display: inline-block;
+    margin: 0 0.3em;
+    vertical-align: middle;
 }
-@media all and (min-width: 480px) {
-    .page.content .meta p {
-        font-size: 1.6em;
-    }
-    .page.content .meta .date-time,
+.page.content .meta .date-time {
+    font-weight: normal;
+}
+
+.page.content .meta .day,
+.page.content .meta .month,
+.page.content .meta .date,
+.page.content .meta .time {
+    line-height: 1;
+    text-transform: uppercase;
+}
+.page.content .meta .day {
+    font-size: 0.75em;
+    margin-bottom: 0.25em;
+}
+.page.content .meta .time {
+    font-size: 0.75em;
+    margin-top: 0.3em;
+}
+.page.content .meta .month,
+.page.content .meta .date {
+    border: 2px solid var(--medium-gray);
+    font-weight: bold;
+    color: var(--medium-gray);
+}
+.page.content .meta .month {
+    padding: 0.3em 0.4em 0.2em;
+    background-color: var(--medium-gray);
+    border-bottom: none;
+    font-size: 1.3em;
+    color: white;
+}
+.page.content .meta .date {
+    font-size: 2.4em;
+
+    padding: 0.2em 0.4em;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.2)));
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+    background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+}
+
+.page.content .meta .location {
+    line-height: 1.1;
+    text-align: left;
+}
+.page.content .meta .building {
+    font-size: 0.8em;
+}
+.page.content .meta .place {
+    font-size: 1.35em;
+}
+.page.content .meta .address {
+
+}
+.page.content .meta .address {
+    
+}
+
+@media all and (min-width: 400px) {
     .page.content .meta .location {
-        display: inline-block;
-        margin: 0 0.3em;
-        vertical-align: middle;
-    }
-    .page.content .meta .date-time {
-        font-weight: normal;
-    }
-    .page.content .meta .location {
-        color: var(--dark-gray);
-    }
-    .page.content .meta .location .building,
-    .page.content .meta .location small,
-    .page.content .meta .day,
-    .page.content .meta .month,
-    .page.content .meta .date,
-    .page.content .meta .time {
-        display: block;
-    }
-    .page.content .meta .location .building {
-        font-size: 0.45em;
-    }
-    .page.content .meta .day,
-    .page.content .meta .month,
-    .page.content .meta .date,
-    .page.content .meta .time {
-        line-height: 1;
-        text-transform: uppercase;
-    }
-    .page.content .meta .day,
-    .page.content .meta .time {
-        font-size: 0.8em;
-    }
-    .page.content .meta .day {
-        margin-bottom: 0.3em;
-    }
-    .page.content .meta .month,
-    .page.content .meta .date {
-        border: 2px solid var(--medium-gray);
-        font-weight: bold;
-        color: var(--medium-gray);
-    }
-    .page.content .meta .month {
-        padding: 0.3em 0.4em 0.2em;
-        background-color: var(--medium-gray);
-        border-bottom: none;
-        font-size: 1.3em;
-        color: white;
-    }
-    .page.content .meta .date {
-        font-size: 2.5em;
-        padding: 0.2em 0.4em;
-        background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.2)));
-        background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
-        background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
-        background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
-        background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
-    }
-    .page.content .meta .time {
-        margin-top: 0.3em;
-    }
-    .page.content .meta .location {
-        font-size: 1.5em;
-        line-height: 1.1;
-        text-align: left;
-    }
-    .page.content .meta {
-        width: 50%;
-    }
-    .page.content .meta {
-        margin-top: 1em;
-        padding-top: 0;
-        border-top: none;
-        font-size: 0.6em;
+        /*max-width: none;*/
     }
 }
 @media all and (min-width: 600px) {
     .page.content .meta {
-        font-size: 0.7em;
-    }
-    .page.content .meta .location .building {
-        font-size: 0.5em;
+        max-width: 56%;
     }
 }
-@media all and (min-width: 768px) {
+@media all and (min-width: 800px) {
     .page.content .meta {
-        font-size: 0.9em;
+        max-width: none;
     }
-}
-@media all and (min-width: 900px) {
-    .page.content .meta .location .building {
-        font-size: 0.7em;
+    .page.content .meta .location {
+        max-width: none;
     }
 }
 
@@ -370,7 +355,7 @@ article.anchor aside h1 {
         max-width: 40%;
         float: right;
         margin-bottom: 2em;
-        margin-left: 4em;
+        margin-left: 2em;
     }
     article.anchor header img {
         margin-top: 2.6em;
