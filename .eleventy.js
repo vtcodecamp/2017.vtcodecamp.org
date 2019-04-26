@@ -16,6 +16,11 @@ module.exports = function(eleventyConfig) {
         return time;
     });
 
+    let md = require('markdown-it')();
+    eleventyConfig.addFilter("markdown", function(string) {
+        return md.render(string);
+    });
+
 
 
     return {
