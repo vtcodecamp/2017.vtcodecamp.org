@@ -1,0 +1,52 @@
+---
+layout: page-layout.njk
+title: Sessions
+meta_title: Sessions | Vermont Code Camp 9 (2017)
+description: Read more about the sessions of Vermont Code Camp 9 (2017)
+meta_description: Read more about the sessions of Vermont Code Camp 9 (2017)
+---
+
+<section id="content" class="event-2017">
+    <h1>{{title}}</h1>
+    <p>{{description}}</p>
+    {% for spaceId, spaceSessions in sessionsBySpace %}
+    <article class="space">
+        <h2 id="{{ spaceId }}">Room {{spaceId}} <small>(Room {{spaceId}})</small></h2>
+
+        {% for session in spaceSessions %}
+        <article class="session">
+            <h3 id="{{session.slug}}">
+                {{ session.title }} 
+                <small>(
+                    {% for speakerSlug in session.speakers %}
+                        <a href="/speakers#{{speakerSlug}}">
+                            {{ speaker.firstName }} {{ speaker.lastName }}
+                        </a>
+                        {% if not loop.last %}/{% endif %}
+                    {% endfor %}
+                )</small>
+                <small>
+                    <a href="/schedule#{{ session.timePeriod }}">
+                        {% set timePeriod = timePeriods[session.timePeriod] %}
+                        {{ timePeriod.start | to12hourTime }}-{{ timePeriod.end | to12hourTime }}
+                    </a>
+                </small>
+            </h3>
+            {% set level = levels[session.level] %}
+            <p class="level">{{ level.title }} <small>({{ level.description }})</small></p>
+
+            {{ session.description }}
+ 
+            {% if session.resources %}
+                <p>Resources:</p>
+                <ul>
+                {% for resource in session.resources %}
+                    <li><a href="{{ resource.href }}">{{ resource.title }}</li></p>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        </article>
+        {% endfor %}
+    </article>
+    {% endfor %}
+</section>
