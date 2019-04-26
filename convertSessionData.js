@@ -135,7 +135,7 @@ function convertTimePeriods()
             end: data.end,
         };
     });
-    writeDataFile('time-periods.json', itemArray);
+    writeDataFile('timePeriods.json', itemArray);
 }
 
 
