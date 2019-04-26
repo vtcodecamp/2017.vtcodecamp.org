@@ -9,9 +9,12 @@ meta_description: Read more about the sessions of Vermont Code Camp 9 (2017)
 <section id="content" class="event-2017">
     <h1>{{title}}</h1>
     <p>{{description}}</p>
-    {% for spaceId, spaceSessions in sessionsBySpace %}
+    {% for spaceSlug, spaceSessions in sessionsBySpace %}
     <article class="space">
-        <h2 id="{{ spaceId }}">Room {{spaceId}} <small>(Room {{spaceId}})</small></h2>
+
+        {% set trackSlug = spaces[spaceSlug].track %}
+
+        <h2 id="{{ spaceSlug }}"> {{ tracks[trackSlug].title }} <small>({{ spaces[spaceSlug].title }})</small></h2>
 
         {% for session in spaceSessions %}
         <article class="session">
@@ -19,6 +22,7 @@ meta_description: Read more about the sessions of Vermont Code Camp 9 (2017)
                 {{ session.title }} 
                 <small>(
                     {% for speakerSlug in session.speakers %}
+                        {% set speaker = speakers[speakerSlug] %}
                         <a href="/speakers#{{speakerSlug}}">
                             {{ speaker.firstName }} {{ speaker.lastName }}
                         </a>
