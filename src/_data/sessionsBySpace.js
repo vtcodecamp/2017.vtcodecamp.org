@@ -11,9 +11,14 @@ function getSessionsBySpace()
         }
         let spaceId = session.space;
         if (!sessionsBySpace[spaceId]) {
-            sessionsBySpace[spaceId] = [];
+            sessionsBySpace[spaceId] = {};
         }
-        sessionsBySpace[spaceId].push(session);
+        let timeCode = parseInt(session.timePeriod);
+        sessionsBySpace[spaceId][timeCode] = session;
     }
-    return sessionsBySpace;
+    let sessionsBySpaceSorted = {};
+    Object.keys(sessionsBySpace).sort().forEach(function(key) {
+      sessionsBySpaceSorted[key] = sessionsBySpace[key];
+    });    
+    return sessionsBySpaceSorted;
 }

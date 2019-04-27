@@ -119,6 +119,14 @@ em {
 small {
     font-size: 0.8em;
 }
+.parenthesis::before {
+    content: "(";
+    margin-right: -3px;
+}
+.parenthesis::after {
+    content: ")";
+    margin-left: -3px;
+}
 .no-break {
     white-space: nowrap;
 }
