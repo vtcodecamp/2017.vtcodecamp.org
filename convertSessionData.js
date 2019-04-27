@@ -43,13 +43,15 @@ function parseSessionData(data)
         resources = data._links.resource;
     }
 
+    let timePeriod = data._links.timePeriod.href.replace('/2017/time-periods/', '');
+
     let session = {
         slug:  data.slug,
         title: data.title,
         description: data.description,
         track: track,
         space: space,
-        timePeriod:  data._links.timePeriod.href.replace('/2017/time-periods/', ''),
+        timePeriod:  parseInt(timePeriod),
         level: level,
         speakers: [],
         resources: data._links.resource,
@@ -130,9 +132,9 @@ function convertTimePeriods()
         let rawData = fs.readFileSync(archivePath + '/time-periods/' + filename)
         let data = JSON.parse(rawData)
         return {
-            slug:  data.slug,
-            start: data.start,
-            end: data.end,
+            slug:  parseInt(data.slug),
+            start: data.start.replace(':00.000 EDT',''),
+            end: data.end.replace(':00.000 EDT',''),
         };
     });
     writeDataFile('timePeriods.json', itemArray);
