@@ -1,0 +1,35 @@
+---
+layout: page-layout.njk
+title: Speakers
+meta_title: Speakers | Vermont Code Camp 9 (2017)
+description: Read more about the Vermont Code Camp 9 (2017) speakers.
+meta_description: Read more about the Vermont Code Camp 9 (2017) speakers.
+---
+
+<h1>{{ title }}</h1>
+
+<p>{{ description }}</p>
+
+{% for speakerSlug, speaker in speakers %}
+    <article class="speaker">
+        <h2 id="{{ speaker.slug }}">{{ speaker.firstName }} {{ speaker.lastName }}
+        {% if speaker.twitter %} 
+            <small class="twitter"><i class="fa fa-twitter"></i> 
+                <a href="{{ speaker.twitter.href }}">{{ speaker.twitter.title }}</a>
+            </small>
+        {% endif %}
+        </h2>
+
+        {{ speaker.bio | markdown | safe }}
+
+        {% if speaker.sessions %}
+            <p>Sessions:</p>
+            <ul>
+            {% for session in speaker.sessions %}
+                <li><a href="/sessions#{{ session.slug }}">{{ session.title }}</a></li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    </article>
+{% endfor %}
+
