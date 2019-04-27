@@ -18,7 +18,7 @@ function getSessionsBySpace()
     }
     let sessionsBySpaceSorted = {};
     Object.keys(sessionsBySpace).sort().forEach(function(key) {
-      sessionsBySpaceSorted[key] = sessionsBySpace[key];
+        sessionsBySpaceSorted[key] = sessionsBySpace[key];
     });    
     return sessionsBySpaceSorted;
 }
