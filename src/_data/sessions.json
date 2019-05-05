@@ -57,6 +57,7 @@
     "closing": {
         "slug": "closing",
         "title": "Closing Remarks",
+        "space": "main-hall",
         "timePeriod": 1715,
         "speakers": []
     },
@@ -238,6 +239,7 @@
     "lunch": {
         "slug": "lunch",
         "title": "Lunch",
+        "space": "main-hall",
         "timePeriod": 1200,
         "speakers": []
     },
@@ -354,6 +356,7 @@
     "registration": {
         "slug": "registration",
         "title": "Registration",
+        "space": "main-hall",
         "timePeriod": 800,
         "speakers": []
     },
@@ -372,6 +375,7 @@
     "snacks": {
         "slug": "snacks",
         "title": "Break and Afternoon Snacks",
+        "space": "main-hall",
         "timePeriod": 1445,
         "speakers": []
     },
@@ -492,6 +496,7 @@
     "welcome": {
         "slug": "welcome",
         "title": "Welcome",
+        "space": "main-hall",
         "timePeriod": 845,
         "speakers": []
     },

@@ -35,6 +35,8 @@ function parseSessionData(data)
     }
     if (data._links.space) {
         space = data._links.space.href.replace('/2017/spaces/', '');
+    } else {
+        space = 'main-hall';
     }
     if (data._links.level) {
         level = data._links.level.href.replace('/2017/levels/', '');
