@@ -1,7 +1,7 @@
 "use strict";
 
 module.exports = function(data) {
-    return JSON.stringify({
+    var stringify = JSON.stringify({
         levels: data.levels,
         schedule: data.schedule,
         sessions: data.sessions,
@@ -10,5 +10,6 @@ module.exports = function(data) {
         speakers: data.speakers,
         timePeriods: data.timePeriods,
         tracks: data.tracks,
-    });
+    }, null, 2)
+    return `<pre>${stringify}</pre>`;
 };
