@@ -24,8 +24,9 @@ meta_description: Read more about the Vermont Code Camp 9 (2017) speakers.
 
         {% if speaker.sessions %}
             <p>Sessions:</p>
-            <ul>
-            {% for session in speaker.sessions %}
+            <ul> 
+            {% for sessionSlug in speaker.sessions %}
+                {% set session = sessions[sessionSlug] %}
                 <li><a href="/sessions#{{ session.slug }}">{{ session.title }}</a></li>
             {% endfor %}
             </ul>
