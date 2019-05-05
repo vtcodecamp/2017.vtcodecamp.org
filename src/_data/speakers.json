@@ -7,7 +7,10 @@
         "twitter": {
             "href": "https://twitter.com/btvaaron",
             "title": "btvaaron"
-        }
+        },
+        "sessions": [
+            "the-hickey-halloway-paradigm"
+        ]
     },
     "amy-chess": {
         "slug": "amy-chess",
@@ -17,19 +20,28 @@
         "twitter": {
             "href": "https://twitter.com/AmyChess",
             "title": "AmyChess"
-        }
+        },
+        "sessions": [
+            "forget-fonts"
+        ]
     },
     "andrew-champagne": {
         "slug": "andrew-champagne",
         "firstName": "Andrew",
         "lastName": "Champagne",
-        "bio": "Passionate Software Developer"
+        "bio": "Passionate Software Developer",
+        "sessions": [
+            "my-opinion-of-clean-code"
+        ]
     },
     "ben-glassman": {
         "slug": "ben-glassman",
         "firstName": "Ben",
         "lastName": "Glassman",
-        "bio": "Ben began working with web technology when he first acquired a dial-up Internet connection in the early 90s. His professional career started as a freelance web developer and graphic designer in southern Massachusetts at an internet start-up during the dot com boom. He moved to Vermont in 2001 to pursue a Bachelor’s Degree in Multimedia and Graphic Design from Champlain College. After graduating in 2005, Ben joined the VDW team, bringing his experience in web development and a passion for building accessible, standards-compliant web sites. He is a versatile polyglot programmer and full-stack web developer, combining expertise in front-end JavaScript development with experience in server side technologies using PHP and MySQL. Ben is the CTO at VDW and serves as technical lead for VDW’s most complicated projects, working with clients to help translate their needs into a deliverable solution. He works closely with our design team to prototype functionality and converts visual details into working web applications."
+        "bio": "Ben began working with web technology when he first acquired a dial-up Internet connection in the early 90s. His professional career started as a freelance web developer and graphic designer in southern Massachusetts at an internet start-up during the dot com boom. He moved to Vermont in 2001 to pursue a Bachelor’s Degree in Multimedia and Graphic Design from Champlain College. After graduating in 2005, Ben joined the VDW team, bringing his experience in web development and a passion for building accessible, standards-compliant web sites. He is a versatile polyglot programmer and full-stack web developer, combining expertise in front-end JavaScript development with experience in server side technologies using PHP and MySQL. Ben is the CTO at VDW and serves as technical lead for VDW’s most complicated projects, working with clients to help translate their needs into a deliverable solution. He works closely with our design team to prototype functionality and converts visual details into working web applications.",
+        "sessions": [
+            "infinite-replay-value"
+        ]
     },
     "betsy-weber": {
         "slug": "betsy-weber",
@@ -39,7 +51,11 @@
         "twitter": {
             "href": "https://twitter.com/betsyweber",
             "title": "betsyweber"
-        }
+        },
+        "sessions": [
+            "bring-your-code-to-life",
+            "the-power-of-networking"
+        ]
     },
     "bill-wilder": {
         "slug": "bill-wilder",
@@ -49,7 +65,10 @@
         "twitter": {
             "href": "https://twitter.com/codingoutloud",
             "title": "codingoutloud"
-        }
+        },
+        "sessions": [
+            "serverless-azure"
+        ]
     },
     "bob-crowley": {
         "slug": "bob-crowley",
@@ -59,7 +78,10 @@
         "twitter": {
             "href": "https://twitter.com/contrivedex",
             "title": "contrivedex"
-        }
+        },
+        "sessions": [
+            "modular-asp-dot-net-mvc"
+        ]
     },
     "bob-familiar": {
         "slug": "bob-familiar",
@@ -69,7 +91,10 @@
         "twitter": {
             "href": "https://twitter.com/bobfamiliar",
             "title": "bobfamiliar"
-        }
+        },
+        "sessions": [
+            "azure-iot-devops-and-edge-devices"
+        ]
     },
     "bradley-holt": {
         "slug": "bradley-holt",
@@ -79,7 +104,10 @@
         "twitter": {
             "href": "https://twitter.com/BradleyHolt",
             "title": "BradleyHolt"
-        }
+        },
+        "sessions": [
+            "offline-sync-for-progressive-web-apps"
+        ]
     },
     "brian-waters": {
         "slug": "brian-waters",
@@ -89,7 +117,10 @@
         "twitter": {
             "href": "https://twitter.com/int10h",
             "title": "int10h"
-        }
+        },
+        "sessions": [
+            "how-file-upload-features-a-security-risk-and-what-you-can-do-about-it"
+        ]
     },
     "chris-miller": {
         "slug": "chris-miller",
@@ -99,7 +130,10 @@
         "twitter": {
             "href": "https://twitter.com/anotherlab",
             "title": "anotherlab"
-        }
+        },
+        "sessions": [
+            "vector-graphics-in-xamarin"
+        ]
     },
     "eric-smith": {
         "slug": "eric-smith",
@@ -109,7 +143,10 @@
         "twitter": {
             "href": "https://twitter.com/eric_s_smith",
             "title": "eric_s_smith"
-        }
+        },
+        "sessions": [
+            "programming-with-kotlin"
+        ]
     },
     "everett-mckay": {
         "slug": "everett-mckay",
@@ -119,25 +156,37 @@
         "twitter": {
             "href": "https://twitter.com/UXDesignEdge",
             "title": "UXDesignEdge"
-        }
+        },
+        "sessions": [
+            "why-i-hate-your-responsive-website"
+        ]
     },
     "frank-canovatchel": {
         "slug": "frank-canovatchel",
         "firstName": "Frank",
         "lastName": "Canovatchel",
-        "bio": "Frank Canovatchel is an Associate Professor of Web Development at Champlain College. He also is a technology consultant for local companies in Vermont. His areas of expertise include back-end Web development, business analytics, and information systems design and development. Frank started his career as a Financial Analyst on Wall Street. After three years and attaining the coveted \"window office\", Frank literally walked off the \"Street\" and into education. He has taught several levels of math (yes, including Calculus!) and economics, not to mention Web development. He has his BA in Political Science, MA in Political Economy and a second MA in Economics, all from Fordham University. In 2015 Frank earned his Ph.D., also from Fordham University."
+        "bio": "Frank Canovatchel is an Associate Professor of Web Development at Champlain College. He also is a technology consultant for local companies in Vermont. His areas of expertise include back-end Web development, business analytics, and information systems design and development. Frank started his career as a Financial Analyst on Wall Street. After three years and attaining the coveted \"window office\", Frank literally walked off the \"Street\" and into education. He has taught several levels of math (yes, including Calculus!) and economics, not to mention Web development. He has his BA in Political Science, MA in Political Economy and a second MA in Economics, all from Fordham University. In 2015 Frank earned his Ph.D., also from Fordham University.",
+        "sessions": [
+            "using-mysql-workbench-to-design-and-build-databases"
+        ]
     },
     "iris-galvez": {
         "slug": "iris-galvez",
         "firstName": "Iris",
         "lastName": "Galvez",
-        "bio": "Iris Galvez holds a BS in Chemical Engineering from the University of Puerto Rico, Mayaguez, and a MS in Chemical engineering from Michigan State University. She has worked in the Semiconductor industry for 11+ years in companies like IBM, Motorola, Intel and most recently, GLOBALFOUNDRIES. In addition to being an engineer, Iris is a licensed Zumba instructor teaching 3 classes a week. Outside of work Iris enjoys traveling, baking and spending time with family."
+        "bio": "Iris Galvez holds a BS in Chemical Engineering from the University of Puerto Rico, Mayaguez, and a MS in Chemical engineering from Michigan State University. She has worked in the Semiconductor industry for 11+ years in companies like IBM, Motorola, Intel and most recently, GLOBALFOUNDRIES. In addition to being an engineer, Iris is a licensed Zumba instructor teaching 3 classes a week. Outside of work Iris enjoys traveling, baking and spending time with family.",
+        "sessions": [
+            "adopt-an-active-office-lifestyle"
+        ]
     },
     "jeff-margolis": {
         "slug": "jeff-margolis",
         "firstName": "Jeff",
         "lastName": "Margolis",
-        "bio": "Web dev (JavaScript) at Dealer.com, BTVJS coordinator. Formerly wrote Clojure for 2 years for Condé Nast."
+        "bio": "Web dev (JavaScript) at Dealer.com, BTVJS coordinator. Formerly wrote Clojure for 2 years for Condé Nast.",
+        "sessions": [
+            "intro-to-clojure"
+        ]
     },
     "jereme-givens-lamothe": {
         "slug": "jereme-givens-lamothe",
@@ -147,7 +196,10 @@
         "twitter": {
             "href": "https://twitter.com/zestymeta",
             "title": "zestymeta"
-        }
+        },
+        "sessions": [
+            "platform-creation-with-qt-and-ubuntu"
+        ]
     },
     "john-need": {
         "slug": "john-need",
@@ -157,7 +209,10 @@
         "twitter": {
             "href": "https://twitter.com/johnneed",
             "title": "johnneed"
-        }
+        },
+        "sessions": [
+            "functional-javascript"
+        ]
     },
     "josh-lee": {
         "slug": "josh-lee",
@@ -167,13 +222,20 @@
         "twitter": {
             "href": "https://twitter.com/joshleecreates",
             "title": "joshleecreates"
-        }
+        },
+        "sessions": [
+            "a-developers-guide-to-wordpress",
+            "learning-react-redux-step-by-step"
+        ]
     },
     "kendall-fortney": {
         "slug": "kendall-fortney",
         "firstName": "Kendall",
         "lastName": "Fortney",
-        "bio": "Kendal Fortney has worked for a variety of companies including Dealer.com and MyWebGrocer, and is a 2017 Vermont Data Innovation Fellow for the Vermont Center for Geographical Information. He is now focusing on using Python for data analytics, machine learning, and their application to business questions."
+        "bio": "Kendal Fortney has worked for a variety of companies including Dealer.com and MyWebGrocer, and is a 2017 Vermont Data Innovation Fellow for the Vermont Center for Geographical Information. He is now focusing on using Python for data analytics, machine learning, and their application to business questions.",
+        "sessions": [
+            "working-with-geospatial-data"
+        ]
     },
     "kendra-goudreau": {
         "slug": "kendra-goudreau",
@@ -183,7 +245,10 @@
         "twitter": {
             "href": "https://twitter.com/kkgoudreau",
             "title": "kkgoudreau"
-        }
+        },
+        "sessions": [
+            "adopt-an-active-office-lifestyle"
+        ]
     },
     "kevin-thorley": {
         "slug": "kevin-thorley",
@@ -193,7 +258,10 @@
         "twitter": {
             "href": "https://twitter.com/kevinthorley",
             "title": "kevinthorley"
-        }
+        },
+        "sessions": [
+            "cloud-migration-at-dealer.com"
+        ]
     },
     "linus-falck-ytter": {
         "slug": "linus-falck-ytter",
@@ -203,7 +271,10 @@
         "twitter": {
             "href": "https://twitter.com/lifayt",
             "title": "lifayt"
-        }
+        },
+        "sessions": [
+            "fast-chatbot-prototyping"
+        ]
     },
     "lucie-delabruere": {
         "slug": "lucie-delabruere",
@@ -213,7 +284,10 @@
         "twitter": {
             "href": "https://twitter.com/techsavvygirl",
             "title": "techsavvygirl"
-        }
+        },
+        "sessions": [
+            "invent-with-code"
+        ]
     },
     "maureen-mcelaney": {
         "slug": "maureen-mcelaney",
@@ -223,7 +297,10 @@
         "twitter": {
             "href": "https://twitter.com/Mo_Mack",
             "title": "Mo_Mack"
-        }
+        },
+        "sessions": [
+            "go-offline-first-to-save-the-world"
+        ]
     },
     "mitch-miller": {
         "slug": "mitch-miller",
@@ -233,7 +310,10 @@
         "twitter": {
             "href": "https://twitter.com/MovingMitch",
             "title": "MovingMitch"
-        }
+        },
+        "sessions": [
+            "plants-potions-and-people"
+        ]
     },
     "peter-vile": {
         "slug": "peter-vile",
@@ -243,7 +323,10 @@
         "twitter": {
             "href": "https://twitter.com/twinsenf1",
             "title": "twinsenf1"
-        }
+        },
+        "sessions": [
+            "working-towards-active-active-systems"
+        ]
     },
     "pj-hagerty": {
         "slug": "pj-hagerty",
@@ -253,7 +336,10 @@
         "twitter": {
             "href": "https://twitter.com/aspleenic",
             "title": "aspleenic"
-        }
+        },
+        "sessions": [
+            "urban-legends"
+        ]
     },
     "rob-friesel": {
         "slug": "rob-friesel",
@@ -263,7 +349,10 @@
         "twitter": {
             "href": "https://twitter.com/founddrama",
             "title": "founddrama"
-        }
+        },
+        "sessions": [
+            "the-technical-art-of-mead-making"
+        ]
     },
     "robert-hurlbut": {
         "slug": "robert-hurlbut",
@@ -273,7 +362,10 @@
         "twitter": {
             "href": "https://twitter.com/RobertHurlbut",
             "title": "RobertHurlbut"
-        }
+        },
+        "sessions": [
+            "threat-modeling-for-secure-software-design"
+        ]
     },
     "shane-celis": {
         "slug": "shane-celis",
@@ -283,19 +375,28 @@
         "twitter": {
             "href": "https://twitter.com/shanecelis",
             "title": "shanecelis"
-        }
+        },
+        "sessions": [
+            "uncovering-bitcoin"
+        ]
     },
     "shannon-walters": {
         "slug": "shannon-walters",
         "firstName": "Shannon",
         "lastName": "Walters",
-        "bio": "Lucie deLaBruere and Shannon Walters are two Vermont educators who work with both in-school and out-of-school activities that encourage more schools and young people to build coding schools."
+        "bio": "Lucie deLaBruere and Shannon Walters are two Vermont educators who work with both in-school and out-of-school activities that encourage more schools and young people to build coding schools.",
+        "sessions": [
+            "invent-with-code"
+        ]
     },
     "tobin-winters": {
         "slug": "tobin-winters",
         "firstName": "Tobin",
         "lastName": "Winters",
-        "bio": "Tobin worked for many years in Systems Administration, Networking and Database Administration before making the move to Software Development. This experience led to his natural fit and passion for DevOps, combining the experience from all of these disciplines and working to bring traditionally siloed departments together to get quality software out the door faster.\n\nHe currently does this for MyWebGrocer in Winooski, VT as the Software Development Manager for Productization and Automation."
+        "bio": "Tobin worked for many years in Systems Administration, Networking and Database Administration before making the move to Software Development. This experience led to his natural fit and passion for DevOps, combining the experience from all of these disciplines and working to bring traditionally siloed departments together to get quality software out the door faster.\n\nHe currently does this for MyWebGrocer in Winooski, VT as the Software Development Manager for Productization and Automation.",
+        "sessions": [
+            "devops-why-you-should-be-doing-it-and-where-to-start"
+        ]
     },
     "veronika-kolesnikova": {
         "slug": "veronika-kolesnikova",
@@ -305,6 +406,9 @@
         "twitter": {
             "href": "https://twitter.com/breakpointv16",
             "title": "breakpointv16"
-        }
+        },
+        "sessions": [
+            "cognitive-services-in-xamarin-applications"
+        ]
     }
 }

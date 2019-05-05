@@ -118,8 +118,25 @@ function convertSpeakers()
             lastName: data.lastName,
             bio: data.bio,
             twitter: twitter,
+            sessions: [],
         };
     });
+
+    // Convert array to keyed object
+    let speakers = {};
+    for (let item of itemArray) {
+        speakers[item.slug] = item;
+    }
+
+    // Add session slugs to speakers
+    let rawSessionData = fs.readFileSync(dataPath + '/sessions.json');
+    let sessions = JSON.parse(rawSessionData);
+    for (let session of Object.values(sessions)) {
+        for (let speakerSlug of session.speakers) {
+            speakers[speakerSlug].sessions.push(session.slug);
+        }
+    }
+
     writeDataFile('speakers.json', itemArray);
 }
 
@@ -169,7 +186,7 @@ function writeDataFile(filename, array)
     let file = `${projectRoot}/src/_data/${filename}`;
     let content = JSON.stringify(object, null, 4);
 
-    fs.writeFile(file, content, function(err) {
+    fs.writeFileSync(file, content, function(err) {
         if(err) {
             return console.log(err);
         }
