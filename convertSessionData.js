@@ -6,6 +6,7 @@ let projectRoot = path.normalize(__dirname);
 let archivePath = projectRoot + '/archive_data'
 let dataPath = projectRoot + '/src/_data'
 
+let year = '2017'
 
 convertSessions();
 convertLevels();
@@ -31,21 +32,21 @@ function parseSessionData(data)
 {
     let track, space, level, resources = [];
     if (data._links.track) {
-        track = data._links.track.href.replace('/2017/tracks/', '');
+        track = data._links.track.href.replace(`/${year}/tracks/`, '');
     }
     if (data._links.space) {
-        space = data._links.space.href.replace('/2017/spaces/', '');
+        space = data._links.space.href.replace(`/${year}/spaces/`, '');
     } else {
         space = 'main-hall';
     }
     if (data._links.level) {
-        level = data._links.level.href.replace('/2017/levels/', '');
+        level = data._links.level.href.replace(`/${year}/levels/`, '');
     }
     if (data._links.resource) {
         resources = data._links.resource;
     }
 
-    let timePeriod = data._links.timePeriod.href.replace('/2017/time-periods/', '');
+    let timePeriod = data._links.timePeriod.href.replace(`/${year}/time-periods/`, '');
 
     let session = {
         slug:  data.slug,
@@ -60,7 +61,7 @@ function parseSessionData(data)
     }
     if (data._links.speaker) {
         data._links.speaker.forEach(function (item) {
-            let speaker = item.href.replace('/2017/speakers/', '');
+            let speaker = item.href.replace(`/${year}/speakers/`, '');
             session.speakers.push(speaker);
         });
     }
@@ -92,12 +93,15 @@ function convertSpaces()
     let itemArray = files.map(function (filename) {
         let rawData = fs.readFileSync(archivePath + '/spaces/' + filename)
         let data = JSON.parse(rawData)
-        return {
+        let space = {
             slug:  data.slug,
             title: data.title,
             order: data.order,
-            track: data._links.track.href.replace('/2017/tracks/', ''),
         };
+        if (data._links.track) {
+            space.track = data._links.track.href.replace(`/${year}/tracks/`, '');
+        }
+        return space;
     });
     writeDataFile('spaces.json', itemArray);
 }
@@ -118,7 +122,7 @@ function convertSpeakers()
             slug:  data.slug,
             firstName: data.firstName,
             lastName: data.lastName,
-            bio: data.bio,
+            bio: (data.bio) ? data.bio : '',
             twitter: twitter,
             sessions: [],
         };
@@ -162,6 +166,9 @@ function convertTimePeriods()
 
 function convertTracks() 
 {
+    if (!fs.existsSync(archivePath + '/tracks')) {
+        return;
+    }
     let files = fs.readdirSync(archivePath + '/tracks');
 
     let itemArray = files.map(function (filename) {
