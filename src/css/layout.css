@@ -49,9 +49,14 @@ aside.page {
     text-align: center;
 }
 aside.page,
-aside.page a {
+aside.page a{
     color: white;
+    vertical-align: top;
 }
+aside.page svg {
+    fill: white;
+}
+
 aside.page a {
     text-decoration: none;
     white-space: nowrap;
@@ -606,4 +611,11 @@ article.resource p {
         padding-bottom: 4em;
         font-size: 1.8em;
     }
+}
+
+
+
+svg {
+    width: 15px;
+    height: 15px;
 }

@@ -14,8 +14,11 @@ meta_description: Read more about the Vermont Code Camp 2017 speakers.
     <article class="speaker">
         <h2 id="{{ speaker.slug }}">{{ speaker.firstName }} {{ speaker.lastName }}
         {% if speaker.twitter %} 
-            <small class="twitter"><i class="fa fa-twitter"></i> 
-                <a href="{{ speaker.twitter.href }}">{{ speaker.twitter.title }}</a>
+            <small class="twitter">
+                <a href="{{ speaker.twitter.href }}">
+                    {% include "fa/twitter.svg" %}
+                    @{{ speaker.twitter.title }}
+                </a>
             </small>
         {% endif %}
         </h2>
