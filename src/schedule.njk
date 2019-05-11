@@ -39,7 +39,7 @@ meta_description: The Vermont Code Camp 2017 schedule included sessions on a var
                 </td>
             {% elif cell.type == "plenumSession" %}
                 <td colspan="5"> {{ cell.title }} </td>
-                {% else %}
+            {% elif cell.type == "session" %}
                 <td> 
                     <a href="{{ cell.title_link }}">{{ cell.title }}</a>
                     <small class="speaker">
@@ -47,6 +47,10 @@ meta_description: The Vermont Code Camp 2017 schedule included sessions on a var
                         <a href="{{ speaker.link }}">{{ speaker.name }}</a>
                     {% endfor %}
                     </small>
+                </td>
+            {% else %}
+                <td>
+                    {# No session scheduled for this timeslots. Blank cell. #}
                 </td>
             {% endif %}
         {% endfor %} 
