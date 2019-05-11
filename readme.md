@@ -37,3 +37,4 @@ It also runs a local webserver and makes the site available at
 * [11ty - Config Input Directory](https://www.11ty.io/docs/config/#input-directory)
 * [11ty - JS Templates](https://www.11ty.io/docs/languages/javascript/)
 * [a11y - add lang attribute](https://dequeuniversity.com/rules/axe/3.1/html-has-lang?application=lighthouse)
+* [a11y - Accessible SVGs](https://css-tricks.com/accessible-svgs/)
