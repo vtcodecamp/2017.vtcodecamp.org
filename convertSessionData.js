@@ -128,6 +128,17 @@ function convertSpeakers()
         };
     });
 
+        // Sort speakers by last name
+        itemArray.sort(function (a, b) {
+            if (a.lastName < b.lastName) {
+                return -1;
+            } else if (a.lastName > b.lastName) {
+                return 1;
+            } else {
+                return 0;
+            }
+        })    
+
     // Convert array to keyed object
     let speakers = {};
     for (let item of itemArray) {
